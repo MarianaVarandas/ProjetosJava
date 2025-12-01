@@ -1,4 +1,4 @@
-# Projeto Java - Minhas Músicas (Desafio POO Alura)
+# Projeto Java - Minhas Músicas (Desafio Programação Orientada a Objetos)
 
 Este projeto foi desenvolvido como parte da Formação Java e Orientação a Objetos da [Alura](https://www.alura.com.br/), dentro do programa [Oracle Next Education](https://www.oracle.com/br/education/oracle-next-education/) da Oracle. O objetivo principal é aplicar e demonstrar na prática os pilares fundamentais da Programação Orientada a Objetos (POO).
 
