@@ -1,53 +1,44 @@
-# Projeto Java - Compras no Cartão (Desafio de Listas e Coleções)
+# Aplicação de Compras com Cartão de Crédito
 
-Este projeto foi desenvolvido como parte da Formação Java e Orientação a Objetos da [Alura](https://www.alura.com.br/), dentro do programa [Oracle Next Education](https://www.oracle.com/br/education/oracle-next-education/) da Oracle. O objetivo principal é consolidar o conhecimento sobre manipulação de listas, ordenação de objetos e interfaces em Java.
-
-É uma aplicação de console que simula o funcionamento de um limite de cartão de crédito e a geração de uma fatura organizada.
+Esse projeto foi criado como um desafio prático para consolidar o conhecimento sobre **Coleções (Collections)**, **Ordenação** e **Lógica de Programação** em Java. Ele simula o uso de um cartão de crédito, controlando o limite disponível e gerando uma fatura organizada.
 
 ## 🧠 Sobre o projeto
 
-**Compras no Cartão** é um sistema simples onde o usuário define um limite de crédito inicial e lança compras sequencialmente. O sistema valida se há saldo suficiente para cada compra e, ao final (ou quando o limite acaba), exibe uma fatura detalhada ordenada pelo valor dos itens (do menor para o maior).
+**Aplicação de Compras** é um sistema de console desenvolvido em Java puro. O objetivo é permitir que o usuário defina um limite de crédito e realize compras sucessivas. O sistema gerencia o saldo em tempo real, impedindo gastos que excedam o limite.
+O grande diferencial deste projeto é a aplicação da interface `Comparable` e da classe `Collections`, garantindo que, ao final da execução, a lista de compras seja apresentada **ordenada pelo valor** (do menor para o maior).
 
-## 🧩 Funcionalidades e Conceitos Aplicados
+## 🧩 Funcionalidades
 
-O projeto foca no uso prático da Collections Framework do Java:
+- 💳 **Definição de Limite:** O usuário inicia o sistema definindo o valor total do cartão.
+- 🛒 **Realizar Compras:** Adição dinâmica de itens (descrição e valor) à lista de compras.
+- 🚫 **Validação de Compra:** O sistema verifica automaticamente se há saldo suficiente antes de aprovar a transação.
+- 📉 **Ordenação Automática:** A fatura final é exibida ordenando os itens do mais barato para o mais caro.
+- 🔄 **Menu Interativo:** Loop contínuo que permite adicionar compras ou verificar saldo até que o usuário decida sair.
 
-- **Interface `Comparable`:** A classe `Item` implementa a interface `Comparable`, permitindo definir uma regra de ordenação natural para os objetos (neste caso, pelo preço).
-- **Ordenação com `Collections.sort()`:** Utilização da classe utilitária `Collections` para ordenar automaticamente a lista de compras antes de exibir a fatura final.
-- **Manipulação de `ArrayList`:** Armazenamento dinâmico das compras realizadas.
-- **Lógica de Negócio:** Controle de fluxo (`while`, `if/else`) para gerenciar o menu, validar o saldo disponível e impedir compras que excedam o limite.
-- **Interação via Console:** Uso da classe `Scanner` para capturar a entrada de dados do usuário.
+## 🚀 Como usar
 
-## 🚀 Como rodar o projeto
-
-Como é um projeto Java de console, não há um link de deploy. Para executá-lo, você precisará ter o Java (JDK 17+) e uma IDE instalada.
-
-1.  **Clonar o repositório:**
-    ```bash
-    git clone [https://github.com/MarianaVarandas/compras-cartao-java.git](https://github.com/MarianaVarandas/compras-cartao-java.git)
-    ``` 
-    *(Observação: você precisará criar este repositório no seu GitHub e atualizar o link acima!)*
-
-2.  **Abrir na sua IDE:**
-    - Abra a pasta do projeto (ex: IntelliJ IDEA, Eclipse).
-    - Certifique-se de que a pasta onde está o arquivo `Main.java` está configurada corretamente como fonte (Sources Root).
-
-3.  **Localizar o arquivo principal:**
-    - Navegue até o arquivo `Main.java`.
-
-4.  **Executar (Run):**
-    - Clique com o botão direito no arquivo `Main.java` e selecione "Run 'Main.main()'".
-    - Interaja com o menu no console da sua IDE (digitando o limite e as compras).
+1. **Ter o Java instalado:** Certifique-se de ter o JDK (versão 17 ou superior) configurado na sua máquina.
+2. **Clonar ou baixar o arquivo:** Acesse o repositório e baixe o código fonte.
+3. **Executar a aplicação:**
+    - Abra a pasta do projeto em sua IDE (IntelliJ, Eclipse, VS Code).
+    - Localize e execute a classe `Main.java`.
+4. **Interagir:**
+    - Defina o limite inicial do cartão quando solicitado.
+    - Escolha a opção **1** para comprar e digite o nome do produto e o valor.
+    - Tente comprar algo maior que o saldo para testar a validação.
+    - Escolha a opção **3** para finalizar e ver sua fatura ordenada!
 
 ## 🧩 Tecnologias
 
-- **Java 17+**
-- **Java Collections Framework**
-- **IntelliJ IDEA**
+- Java (JDK)
+- Java Collections Framework (`ArrayList`, `Collections.sort`)
+- Interface `Comparable` (para lógica de ordenação)
+- Classe `Scanner` (Entrada de dados)
+- Programação Orientada a Objetos (Classes e Objetos)
 
 ---
 
-Feito com 💜 por [Mariana Varandas](https://github.com/MarianaVarandas) – Desenvolvedora em formação.
+Feito com 💜 por [Dayalu](https://github.com/MarianaVarandas) – Professora de Voz, Gestora de Projetos e Desenvolvedora em formação.  
 Me siga nas redes:
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mariana-varandas-7b912b82/)
