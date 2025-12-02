@@ -1,54 +1,43 @@
-# Projeto Java - Minhas Músicas (Desafio Programação Orientada a Objetos)
+# Desafio Java: Minhas Músicas (Áudio Player)
 
-Este projeto foi desenvolvido como parte da Formação Java e Orientação a Objetos da [Alura](https://www.alura.com.br/), dentro do programa [Oracle Next Education](https://www.oracle.com/br/education/oracle-next-education/) da Oracle. O objetivo principal é aplicar e demonstrar na prática os pilares fundamentais da Programação Orientada a Objetos (POO).
-
-É um projeto de console, focado 100% na lógica de back-end e na estruturação de um sistema coeso e desacoplado.
+Esse projeto foi criado como um desafio prático para consolidar o conhecimento sobre **Programação Orientada a Objetos (POO)**, focando em **Herança**, **Polimorfismo** e **Encapsulamento**. Ele foi desenvolvido durante a Formação Java da Alura (Oracle Next Education).
 
 ## 🧠 Sobre o projeto
 
-**Minhas Músicas** é um simulador de plataforma de áudio que roda inteiramente no console. Ele demonstra como estruturar um sistema que gerencia diferentes tipos de mídia (Músicas e Podcasts) e como eles podem ser classificados de formas distintas com base na interação do usuário (reproduções e curtidas).
+**Minhas Músicas** é um sistema de console desenvolvido em Java puro. O objetivo é simular o back-end de uma plataforma de streaming, gerenciando diferentes tipos de conteúdo de áudio e suas interações com o usuário.
 
-## 🧩 Funcionalidades e Conceitos Aplicados
+O grande diferencial deste projeto é a arquitetura desacoplada: através de uma classe mãe (`Audio`), conseguimos tratar Músicas e Podcasts de forma genérica, enquanto aplicamos regras de negócio específicas (como a classificação por estrelas) de forma individualizada para cada tipo de mídia.
 
-O núcleo do projeto é a demonstração dos conceitos de POO:
+## 🧩 Funcionalidades
 
-- **Herança:** Uma classe-pai `Audio` define atributos e comportamentos comuns (como `titulo`, `curtir()`, `reproduzir()`), que são herdados pelas classes-filhas `Musica` e `Podcast`.
-- **Sobrescrita de Métodos (`@Override`):** Cada classe-filha implementa sua própria lógica para o método `getClassificacao()`.
-    - `Musica` se classifica com base no **número de reproduções**.
-    - `Podcast` se classifica com base no **número de curtidas**.
-- **Polimorfismo:** A classe de serviço `MinhasPreferidas` possui um método `inclui(Audio audio)` que pode receber *qualquer* objeto do tipo `Audio` (seja `Musica` ou `Podcast`). Ela executa a lógica de classificação sem precisar saber qual é o tipo específico do objeto, apenas "confiando" no contrato estabelecido pela superclasse.
-- **Separação de Responsabilidades:** O projeto separa claramente as classes de "Modelo" (que guardam dados, como `Musica`) da classe de "Serviço" (que executa ações, como `MinhasPreferidas`).
+- 🎵 **Modelagem de Áudio:** Uso de herança para criar Músicas e Podcasts que compartilham atributos (título, duração) da classe mãe `Audio`.
+- 🎧 **Sistema de Reprodução:** Controle de total de reproduções e curtidas através de métodos encapsulados.
+- ⭐ **Classificação Inteligente:** Uso de sobrescrita de métodos (`@Override`) para definir regras distintas:
+    - **Músicas:** Classificadas baseadas no número de reproduções.
+    - **Podcasts:** Classificados baseados no número de curtidas.
+- 🔄 **Polimorfismo:** A classe `MinhasPreferidas` consegue avaliar e promover qualquer objeto que seja um `Audio`, sem precisar conhecer sua implementação específica.
 
-## 🚀 Como rodar o projeto
+## 🚀 Como usar
 
-Como é um projeto Java de console, não há um link de deploy. Para executá-lo, você precisará ter o Java (JDK 17+) e uma IDE instalada.
-
-1.  **Clonar o repositório:**
-    ```bash
-    git clone [https://github.com/MarianaVarandas/minhas-musicas.git](https://github.com/MarianaVarandas/minhas-musicas.git) 
-    ``` 
-    *(Observação: você precisará criar este repositório no seu GitHub e atualizar o link!)*
-
-2.  **Abrir na sua IDE:**
-    - Abra o projeto (ex: IntelliJ IDEA, Eclipse).
-    - Certifique-se de que a pasta `src` (ou a pasta raiz do seu código) está marcada como "Sources Root" (pasta de código-fonte).
-
-3.  **Localizar o arquivo principal:**
-    - Navegue até `io.github.marianavarandas.minhasmusicas.principal.Main.java`
-
-4.  **Executar (Run):**
-    - Clique com o botão direito no arquivo `Main.java` e selecione "Run 'Main.main()'".
-    - O resultado da simulação será exibido no console da sua IDE.
+1. **Ter o Java instalado:** Certifique-se de ter o JDK (versão 17 ou superior) configurado na sua máquina.
+2. **Clonar ou baixar o arquivo:** Acesse o repositório e baixe o código fonte.
+3. **Executar a aplicação:**
+    - Abra a pasta do projeto em sua IDE (IntelliJ, Eclipse, VS Code).
+    - Localize a classe `Main.java` (em `io.github.marianavarandas.minhasmusicas.principal`).
+4. **Visualizar:**
+    - Execute o método `main`.
+    - O console exibirá a simulação das músicas e podcasts sendo tocados e a avaliação automática de "Sucesso Absoluto" ou recomendações baseadas na lógica implementada.
 
 ## 🧩 Tecnologias
 
-- **Java 17+**
-- **Programação Orientada a Objetos (POO)**
-- **IntelliJ IDEA** 
+- Java (JDK 17+)
+- Programação Orientada a Objetos (Herança, Polimorfismo, Encapsulamento)
+- Sobrescrita de Métodos
+- IDE IntelliJ IDEA
 
 ---
 
-Feito com 💜 por [Mariana Varandas](https://github.com/MarianaVarandas) – Desenvolvedora em formação.
+Feito com 💜 por [Dayalu](https://github.com/MarianaVarandas) – Professora de Voz, Gestora de Projetos e Desenvolvedora em formação.  
 Me siga nas redes:
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mariana-varandas-7b912b82/)
