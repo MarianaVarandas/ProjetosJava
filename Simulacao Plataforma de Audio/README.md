@@ -1,12 +1,12 @@
 # Desafio Java: Minhas Músicas (Áudio Player)
 
-Esse projeto foi criado como um desafio prático para consolidar o conhecimento sobre **Programação Orientada a Objetos (POO)**, focando em **Herança**, **Polimorfismo** e **Encapsulamento**. Ele foi desenvolvido durante a Formação Java da Alura (Oracle Next Education).
+Esse projeto foi criado como um desafio prático para consolidar o conhecimento sobre **Programação Orientada a Objetos (POO)**, focando em **Herança**, **Polimorfismo** e **Encapsulamento**. Foi desenvolvido durante a formação Tech Foundation do programa Oracle Next Education.
 
 ## 🧠 Sobre o projeto
 
 **Minhas Músicas** é um sistema de console desenvolvido em Java puro. O objetivo é simular o back-end de uma plataforma de streaming, gerenciando diferentes tipos de conteúdo de áudio e suas interações com o usuário.
 
-O grande diferencial deste projeto é a arquitetura desacoplada: através de uma classe mãe (`Audio`), conseguimos tratar Músicas e Podcasts de forma genérica, enquanto aplicamos regras de negócio específicas (como a classificação por estrelas) de forma individualizada para cada tipo de mídia.
+O grande diferencial deste projeto é a arquitetura desacoplada: através de uma classe mãe (`Audio`), consigo tratar Músicas e Podcasts de forma genérica, enquanto aplico regras de negócio específicas (como a classificação por estrelas) de forma individualizada para cada tipo de mídia.
 
 ## 🧩 Funcionalidades
 
