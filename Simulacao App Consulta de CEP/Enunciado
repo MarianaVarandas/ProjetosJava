@@ -1,0 +1,40 @@
+Desafio: Criar um Buscador de CEP com Java
+
+Objetivo: Desenvolver uma aplicação Java que consulta a API ViaCEP para buscar informações de endereços a partir de um CEP fornecido pelo usuário.
+
+Requisitos:
+
+Consumo da API ViaCEP:
+
+Utilize a API ViaCEP (https://viacep.com.br/) para buscar os dados do endereço.
+
+A aplicação deve fazer uma requisição GET para a API, passando o CEP fornecido pelo usuário.
+Trate a resposta da API, que estará no formato JSON.
+
+Interface com o Usuário:
+
+Crie um menu interativo no console que permita ao usuário inserir o CEP que deseja buscar.
+Exiba os dados do endereço (logradouro, complemento, bairro, localidade, UF) de forma organizada no console.
+
+Geração de Arquivo JSON:
+
+Após receber os dados da API, grave as informações do endereço em um arquivo JSON.
+O nome do arquivo deve ser algo como "endereco_CEP.json", onde CEP é o CEP consultado.
+
+Tratamento de Erros:
+Implemente tratamento de erros para casos como CEP inválido (formato incorreto) e falhas na comunicação com a API.
+Exiba mensagens de erro claras e informativas para o usuário.
+
+Dicas:
+
+Relembre como fazer requisições HTTP em Java (vimos isso no curso!).
+Utilize bibliotecas como java.net.http para fazer as requisições e com.google.code.gson para manipular o JSON.
+Estruture seu código em classes e métodos para facilitar a organização e reutilização.
+Explore o site da ViaCEP para entender todas as possibilidades da API.
+
+Extras (Opcional):
+
+Implemente a validação do formato do CEP antes de fazer a requisição à API.
+Adicione a funcionalidade de consultar vários CEPs em sequência.
+Crie uma interface gráfica simples para a aplicação.
+Lembre-se, o objetivo é praticar o que você aprendeu no curso e consolidar seus conhecimentos sobre consumo de APIs, manipulação de JSON e tratamento de erros em Java.
