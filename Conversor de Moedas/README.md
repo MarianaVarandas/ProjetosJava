@@ -1,6 +1,6 @@
 # Conversor de Moedas - Challenge Java 💱
 
-Projeto desenvolvido na finalização da formação Java e Orientação a Objetos no Tech Advance do programa Oracle Next Education. Esta aplicação de console consome a API externa [ExchangeRate-API](https://www.exchangerate-api.com/) para realizar conversões de moedas com taxas em tempo real.
+Projeto desenvolvido para finalização da formação "Java e Orientação a Objetos" na fase Tech Foundation do programa Oracle Next Education. Esta aplicação de console consome a API externa [ExchangeRate-API](https://www.exchangerate-api.com/) para realizar conversões de moedas com taxas em tempo real.
 
 ## 🧠 Sobre o projeto
 
@@ -9,6 +9,7 @@ O **Conversor de Moedas** tem como objetivo colocar em prática o consumo de API
 ## 🔨 Funcionalidades
 
 - 🔄 **Conversão em Tempo Real:** Conecta-se à API para obter a taxa de câmbio exata do momento.
+
 - 🌎 **Suporte a 6 Moedas:** Realiza conversões entre:
   - Dólar Americano (USD)
   - Real Brasileiro (BRL)
@@ -16,10 +17,12 @@ O **Conversor de Moedas** tem como objetivo colocar em prática o consumo de API
   - Peso Colombiano (COP)
   - Peso Chileno (CLP)
   - Boliviano (BOB)
+
 - 🛡️ **Blindagem de Erros:**
   - Tratamento para entradas inválidas (letras que deveriam ser números).
   - Verificação de status da conexão e da API.
   - Mensagens de erro amigáveis para o usuário.
+
 - 🖥️ **Menu Interativo:** Interface via console que permite múltiplas conversões sem reiniciar o programa até que o usuário decida sair.
 
 ## 🛠️ Tecnologias Utilizadas
@@ -38,19 +41,19 @@ O **Conversor de Moedas** tem como objetivo colocar em prática o consumo de API
 
 2. **Clonar o repositório:**
    ```bash
-   git clone [https://github.com/MarianaVarandas/ProjetosJava.git](https://github.com/MarianaVarandas/ProjetosJava.git)
+   git clone (https://github.com/MarianaVarandas/ProjetosJava/tree/main/Conversor%20de%20Moedas)
 
 3. Configuração da API
 
-   1. Abra a classe `Main.java`.
-   2. Localize a linha da URL e insira sua API Key onde indicado:
+   - Abra a classe `Main.java`.
+   - Localize a linha da URL e insira sua API Key onde indicado:
       `.../v6/SUA-CHAVE-AQUI/pair/...`
 
 3. 🚀 Executar
 
-   1. Abra o projeto na sua IDE.
-   2. Execute o método `main`.
-   3. Siga as instruções do menu no console.
+   - Abra o projeto na sua IDE.
+   - Execute o método `main`.
+   - Siga as instruções do menu no console.
 
    ---
 
