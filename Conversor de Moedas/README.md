@@ -43,6 +43,8 @@ O **Conversor de Moedas** tem como objetivo colocar em prática o consumo de API
    ```bash
    git clone (https://github.com/MarianaVarandas/ProjetosJava/tree/main/Conversor%20de%20Moedas)
 
+   - Ou baixe o arquivo ZIP e extraia na sua máquina.
+
 3. Configuração da API
 
    - Abra a classe `Main.java`.
