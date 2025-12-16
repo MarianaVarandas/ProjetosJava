@@ -53,7 +53,8 @@ O **Caça CEP** tem como objetivo consolidar conhecimentos sobre requisições H
 
 ---
 
-Feito com 💜 por [Dayalu](https://github.com/MarianaVarandas) – Professora de Voz, Gestora de Projetos e Desenvolvedora em formação.
+Feito com 💜 por [Dayalu](https://github.com/MarianaVarandas) – Desenvolvedora em formação.
+
 Me siga nas redes:
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mariana-varandas-7b912b82/)
